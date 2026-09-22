@@ -1,0 +1,2942 @@
+[
+  {
+    "day": 1,
+    "week": 1,
+    "items": [
+      {
+        "id": "d1-cert",
+        "subject": "AI-200",
+        "topic": "Azure Container Registry — build, store, version & manage container images; ACR Tasks build & run",
+        "minutes": 180
+      },
+      {
+        "id": "d1-dsa",
+        "subject": "DSA",
+        "topic": "What is DSA & why it matters — how to think about problems",
+        "minutes": 100
+      },
+      {
+        "id": "d1-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 1",
+        "minutes": 60
+      },
+      {
+        "id": "d1-sql",
+        "subject": "SQL",
+        "topic": "SELECT, WHERE, ORDER BY revision",
+        "minutes": 25
+      },
+      {
+        "id": "d1-net",
+        "subject": ".NET",
+        "topic": "Create ASP.NET Core Web API project, folder structure setup",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 2,
+    "week": 1,
+    "items": [
+      {
+        "id": "d2-cert",
+        "subject": "AI-200",
+        "topic": "Deploy containers to Azure App Service (env vars & secrets); Container Apps — deployment & environment config",
+        "minutes": 180
+      },
+      {
+        "id": "d2-dsa",
+        "subject": "DSA",
+        "topic": "Big-O notation: time complexity basics (O(1), O(n), O(n²))",
+        "minutes": 100
+      },
+      {
+        "id": "d2-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 2",
+        "minutes": 60
+      },
+      {
+        "id": "d2-sql",
+        "subject": "SQL",
+        "topic": "JOINS — INNER / LEFT / RIGHT / FULL",
+        "minutes": 25
+      },
+      {
+        "id": "d2-net",
+        "subject": ".NET",
+        "topic": "Configure Swagger, appsettings, DI basics",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 3,
+    "week": 1,
+    "items": [
+      {
+        "id": "d3-cert",
+        "subject": "AI-200",
+        "topic": "Container Apps — revision management, KEDA event-driven autoscaling",
+        "minutes": 180
+      },
+      {
+        "id": "d3-dsa",
+        "subject": "DSA",
+        "topic": "Big-O notation: space complexity + best/worst/average case",
+        "minutes": 100
+      },
+      {
+        "id": "d3-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 3",
+        "minutes": 60
+      },
+      {
+        "id": "d3-sql",
+        "subject": "SQL",
+        "topic": "GROUP BY, HAVING, aggregate functions",
+        "minutes": 25
+      },
+      {
+        "id": "d3-net",
+        "subject": ".NET",
+        "topic": "Add User model + DbContext skeleton (EF Core intro)",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 4,
+    "week": 1,
+    "items": [
+      {
+        "id": "d4-cert",
+        "subject": "AI-200",
+        "topic": "AKS — deploy & manage applications via manifest files",
+        "minutes": 180
+      },
+      {
+        "id": "d4-dsa",
+        "subject": "DSA",
+        "topic": "C# essentials for DSA: variables, loops, methods, debugging basics",
+        "minutes": 100
+      },
+      {
+        "id": "d4-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 4",
+        "minutes": 60
+      },
+      {
+        "id": "d4-sql",
+        "subject": "SQL",
+        "topic": "Subqueries",
+        "minutes": 25
+      },
+      {
+        "id": "d4-net",
+        "subject": ".NET",
+        "topic": "Implement JWT token generation (login endpoint)",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 5,
+    "week": 1,
+    "items": [
+      {
+        "id": "d5-cert",
+        "subject": "AI-200",
+        "topic": "AKS & Container Apps — monitor & troubleshoot (logs, events, end-to-end connectivity)",
+        "minutes": 180
+      },
+      {
+        "id": "d5-dsa",
+        "subject": "DSA",
+        "topic": "Arrays: what is an array — declaration, indexing, fixed size in C#",
+        "minutes": 100
+      },
+      {
+        "id": "d5-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 5",
+        "minutes": 60
+      },
+      {
+        "id": "d5-sql",
+        "subject": "SQL",
+        "topic": "Window functions — ROW_NUMBER, RANK",
+        "minutes": 25
+      },
+      {
+        "id": "d5-net",
+        "subject": ".NET",
+        "topic": "Implement JWT validation middleware + [Authorize]",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 6,
+    "week": 1,
+    "items": [
+      {
+        "id": "d6-cert",
+        "subject": "AI-200",
+        "topic": "Azure Cosmos DB for NoSQL — connect & query using the SDK",
+        "minutes": 180
+      },
+      {
+        "id": "d6-dsa",
+        "subject": "DSA",
+        "topic": "Arrays: traversal — for loop vs foreach, reading & printing elements",
+        "minutes": 100
+      },
+      {
+        "id": "d6-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 6",
+        "minutes": 60
+      },
+      {
+        "id": "d6-sql",
+        "subject": "SQL",
+        "topic": "Window functions — LEAD/LAG, PARTITION BY",
+        "minutes": 25
+      },
+      {
+        "id": "d6-net",
+        "subject": ".NET",
+        "topic": "Add role-based authorization + test with Postman",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 7,
+    "week": 2,
+    "items": [
+      {
+        "id": "d7-cert",
+        "subject": "AI-200",
+        "topic": "Cosmos DB — optimize RU consumption, indexing policies, consistency levels",
+        "minutes": 180
+      },
+      {
+        "id": "d7-dsa",
+        "subject": "DSA",
+        "topic": "Arrays: insertion — at end, at a given index (shifting elements)",
+        "minutes": 100
+      },
+      {
+        "id": "d7-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 7",
+        "minutes": 60
+      },
+      {
+        "id": "d7-sql",
+        "subject": "SQL",
+        "topic": "Indexes & query performance basics",
+        "minutes": 25
+      },
+      {
+        "id": "d7-net",
+        "subject": ".NET",
+        "topic": "EF Core — DbContext, Migrations basics",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 8,
+    "week": 2,
+    "items": [
+      {
+        "id": "d8-cert",
+        "subject": "AI-200",
+        "topic": "Cosmos DB — vector embeddings & similarity search for semantic retrieval; change feed processor",
+        "minutes": 180
+      },
+      {
+        "id": "d8-dsa",
+        "subject": "DSA",
+        "topic": "Arrays: deletion — at end, at a given index (shifting elements)",
+        "minutes": 100
+      },
+      {
+        "id": "d8-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 8",
+        "minutes": 60
+      },
+      {
+        "id": "d8-sql",
+        "subject": "SQL",
+        "topic": "Normalization (1NF–3NF)",
+        "minutes": 25
+      },
+      {
+        "id": "d8-net",
+        "subject": ".NET",
+        "topic": "EF Core — Relationships (1:1, 1:N, N:N)",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 9,
+    "week": 2,
+    "items": [
+      {
+        "id": "d9-cert",
+        "subject": "AI-200",
+        "topic": "Azure Database for PostgreSQL — connect/query via SDK, schema modeling, indexing strategies",
+        "minutes": 180
+      },
+      {
+        "id": "d9-dsa",
+        "subject": "DSA",
+        "topic": "Arrays: searching — linear search, find min/max",
+        "minutes": 100
+      },
+      {
+        "id": "d9-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 9",
+        "minutes": 60
+      },
+      {
+        "id": "d9-sql",
+        "subject": "SQL",
+        "topic": "Stored Procedures & Functions",
+        "minutes": 25
+      },
+      {
+        "id": "d9-net",
+        "subject": ".NET",
+        "topic": "EF Core — Fluent API & configurations",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 10,
+    "week": 2,
+    "items": [
+      {
+        "id": "d10-cert",
+        "subject": "AI-200",
+        "topic": "PostgreSQL — pgvector optimization, compute/memory/storage config for vector workloads, connection optimization",
+        "minutes": 180
+      },
+      {
+        "id": "d10-dsa",
+        "subject": "DSA",
+        "topic": "Arrays: aggregation — sum, average, count/frequency of elements",
+        "minutes": 100
+      },
+      {
+        "id": "d10-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 10",
+        "minutes": 60
+      },
+      {
+        "id": "d10-sql",
+        "subject": "SQL",
+        "topic": "Transactions & ACID properties",
+        "minutes": 25
+      },
+      {
+        "id": "d10-net",
+        "subject": ".NET",
+        "topic": "EF Core — query performance (Include, AsNoTracking, projections)",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 11,
+    "week": 2,
+    "items": [
+      {
+        "id": "d11-cert",
+        "subject": "AI-200",
+        "topic": "PostgreSQL — vector similarity search & RAG patterns; Azure Managed Redis — caching/expiration/invalidation + vector indexing",
+        "minutes": 180
+      },
+      {
+        "id": "d11-dsa",
+        "subject": "DSA",
+        "topic": "Arrays: reverse an array — two approaches (extra array vs in-place)",
+        "minutes": 100
+      },
+      {
+        "id": "d11-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 11",
+        "minutes": 60
+      },
+      {
+        "id": "d11-sql",
+        "subject": "SQL",
+        "topic": "Views & CTEs",
+        "minutes": 25
+      },
+      {
+        "id": "d11-net",
+        "subject": ".NET",
+        "topic": "EF Core — transactions & concurrency handling",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 12,
+    "week": 2,
+    "items": [
+      {
+        "id": "d12-cert",
+        "subject": "AI-200",
+        "topic": "Azure Service Bus — queues, dead-letter handling, messages, topics, subscriptions",
+        "minutes": 180
+      },
+      {
+        "id": "d12-dsa",
+        "subject": "DSA",
+        "topic": "Arrays: rotate an array — left & right rotation (brute force + optimal)",
+        "minutes": 100
+      },
+      {
+        "id": "d12-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 12",
+        "minutes": 60
+      },
+      {
+        "id": "d12-sql",
+        "subject": "SQL",
+        "topic": "Query optimization / execution plans",
+        "minutes": 25
+      },
+      {
+        "id": "d12-net",
+        "subject": ".NET",
+        "topic": "EF Core — practice: build full CRUD with relationships",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 13,
+    "week": 3,
+    "items": [
+      {
+        "id": "d13-cert",
+        "subject": "AI-200",
+        "topic": "Azure Event Grid — event-driven workflows, filters, custom events, retries",
+        "minutes": 180
+      },
+      {
+        "id": "d13-dsa",
+        "subject": "DSA",
+        "topic": "Arrays: two-pointer technique — pair with given sum, remove duplicates from sorted array",
+        "minutes": 100
+      },
+      {
+        "id": "d13-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 13",
+        "minutes": 60
+      },
+      {
+        "id": "d13-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 1",
+        "minutes": 25
+      },
+      {
+        "id": "d13-net",
+        "subject": ".NET",
+        "topic": "Repository Pattern — implement for your API",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 14,
+    "week": 3,
+    "items": [
+      {
+        "id": "d14-cert",
+        "subject": "AI-200",
+        "topic": "Azure Functions — serverless APIs, triggers & bindings",
+        "minutes": 180
+      },
+      {
+        "id": "d14-dsa",
+        "subject": "DSA",
+        "topic": "Arrays: sliding window technique — max sum subarray of size k",
+        "minutes": 100
+      },
+      {
+        "id": "d14-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 14",
+        "minutes": 60
+      },
+      {
+        "id": "d14-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 2",
+        "minutes": 25
+      },
+      {
+        "id": "d14-net",
+        "subject": ".NET",
+        "topic": "Unit of Work Pattern",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 15,
+    "week": 3,
+    "items": [
+      {
+        "id": "d15-cert",
+        "subject": "AI-200",
+        "topic": "Azure Functions — configure & deploy function apps",
+        "minutes": 180
+      },
+      {
+        "id": "d15-dsa",
+        "subject": "DSA",
+        "topic": "Arrays: prefix sum technique — range sum queries, equilibrium index",
+        "minutes": 100
+      },
+      {
+        "id": "d15-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 15",
+        "minutes": 60
+      },
+      {
+        "id": "d15-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 3",
+        "minutes": 25
+      },
+      {
+        "id": "d15-net",
+        "subject": ".NET",
+        "topic": "Factory Pattern",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 16,
+    "week": 3,
+    "items": [
+      {
+        "id": "d16-cert",
+        "subject": "AI-200",
+        "topic": "Azure Key Vault — secrets, rotation, retrieval; Azure App Configuration",
+        "minutes": 180
+      },
+      {
+        "id": "d16-dsa",
+        "subject": "DSA",
+        "topic": "Arrays: Kadane’s algorithm — maximum subarray sum",
+        "minutes": 100
+      },
+      {
+        "id": "d16-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 16",
+        "minutes": 60
+      },
+      {
+        "id": "d16-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 4",
+        "minutes": 25
+      },
+      {
+        "id": "d16-net",
+        "subject": ".NET",
+        "topic": "Singleton & DI lifetimes (Transient/Scoped/Singleton)",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 17,
+    "week": 3,
+    "items": [
+      {
+        "id": "d17-cert",
+        "subject": "AI-200",
+        "topic": "OpenTelemetry SDKs — distributed tracing; KQL queries — analyze logs & metrics",
+        "minutes": 180
+      },
+      {
+        "id": "d17-dsa",
+        "subject": "DSA",
+        "topic": "Arrays: 2D arrays/matrices — declaration, traversal, row/column sum",
+        "minutes": 100
+      },
+      {
+        "id": "d17-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 17",
+        "minutes": 60
+      },
+      {
+        "id": "d17-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 5",
+        "minutes": 25
+      },
+      {
+        "id": "d17-net",
+        "subject": ".NET",
+        "topic": "CQRS Pattern — concept & simple implementation",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 18,
+    "week": 3,
+    "items": [
+      {
+        "id": "d18-cert",
+        "subject": "AI-200",
+        "topic": "Full revision — review the official study guide checklist, note weak areas",
+        "minutes": 180
+      },
+      {
+        "id": "d18-dsa",
+        "subject": "DSA",
+        "topic": "Arrays: practice problems (easy) — move zeroes, missing number & more",
+        "minutes": 100
+      },
+      {
+        "id": "d18-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 18",
+        "minutes": 60
+      },
+      {
+        "id": "d18-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 6",
+        "minutes": 25
+      },
+      {
+        "id": "d18-net",
+        "subject": ".NET",
+        "topic": "Strategy & Decorator Patterns — apply to the API",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 19,
+    "week": 4,
+    "items": [
+      {
+        "id": "d19-cert",
+        "subject": "AI-200",
+        "topic": "Practice test 1 (AI Skills Navigator) + review mistakes",
+        "minutes": 180
+      },
+      {
+        "id": "d19-dsa",
+        "subject": "DSA",
+        "topic": "Strings: basics — immutability in C#, char array vs string, StringBuilder",
+        "minutes": 100
+      },
+      {
+        "id": "d19-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 19",
+        "minutes": 60
+      },
+      {
+        "id": "d19-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 7",
+        "minutes": 25
+      },
+      {
+        "id": "d19-net",
+        "subject": ".NET",
+        "topic": "Clean Architecture — layers overview (Domain/Application/Infra/API)",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 20,
+    "week": 4,
+    "items": [
+      {
+        "id": "d20-cert",
+        "subject": "AI-200",
+        "topic": "Practice test 2 + final review — book/attempt the exam",
+        "minutes": 180
+      },
+      {
+        "id": "d20-dsa",
+        "subject": "DSA",
+        "topic": "Strings: traversal & basic operations — length, substring, concatenation",
+        "minutes": 100
+      },
+      {
+        "id": "d20-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 20",
+        "minutes": 60
+      },
+      {
+        "id": "d20-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 8",
+        "minutes": 25
+      },
+      {
+        "id": "d20-net",
+        "subject": ".NET",
+        "topic": "Restructure project into Clean Architecture layers",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 21,
+    "week": 4,
+    "items": [
+      {
+        "id": "d21-cert",
+        "subject": "AZ-900",
+        "topic": "Cloud computing concepts — value proposition, economies of scale, CapEx vs OpEx",
+        "minutes": 100
+      },
+      {
+        "id": "d21-dsa",
+        "subject": "DSA",
+        "topic": "Strings: reverse a string — two approaches",
+        "minutes": 100
+      },
+      {
+        "id": "d21-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 21",
+        "minutes": 60
+      },
+      {
+        "id": "d21-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 9",
+        "minutes": 25
+      },
+      {
+        "id": "d21-net",
+        "subject": ".NET",
+        "topic": "Move business logic into Application layer (Services/UseCases)",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 22,
+    "week": 4,
+    "items": [
+      {
+        "id": "d22-cert",
+        "subject": "AZ-900",
+        "topic": "Cloud types — public/private/hybrid; service models — IaaS/PaaS/SaaS",
+        "minutes": 100
+      },
+      {
+        "id": "d22-dsa",
+        "subject": "DSA",
+        "topic": "Strings: palindrome check",
+        "minutes": 100
+      },
+      {
+        "id": "d22-py",
+        "subject": "Python",
+        "topic": "Udemy Python Course — Section 22",
+        "minutes": 60
+      },
+      {
+        "id": "d22-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 10",
+        "minutes": 25
+      },
+      {
+        "id": "d22-net",
+        "subject": ".NET",
+        "topic": "MediatR — introduce for CQRS + Clean Architecture",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 23,
+    "week": 4,
+    "items": [
+      {
+        "id": "d23-cert",
+        "subject": "AZ-900",
+        "topic": "Core architecture — Regions & Availability Zones",
+        "minutes": 100
+      },
+      {
+        "id": "d23-dsa",
+        "subject": "DSA",
+        "topic": "Strings: anagram check, character frequency (Dictionary)",
+        "minutes": 100
+      },
+      {
+        "id": "d23-py",
+        "subject": "Python",
+        "topic": "Python course — full revision & wrap-up",
+        "minutes": 60
+      },
+      {
+        "id": "d23-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 11",
+        "minutes": 25
+      },
+      {
+        "id": "d23-net",
+        "subject": ".NET",
+        "topic": "Clean Architecture — review & refactor full project",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 24,
+    "week": 4,
+    "items": [
+      {
+        "id": "d24-cert",
+        "subject": "AZ-900",
+        "topic": "Core architecture — Resource Groups, Subscriptions, Management Groups, ARM",
+        "minutes": 100
+      },
+      {
+        "id": "d24-dsa",
+        "subject": "DSA",
+        "topic": "Strings: two-pointer technique — valid palindrome variants",
+        "minutes": 100
+      },
+      {
+        "id": "d24-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 1",
+        "minutes": 60
+      },
+      {
+        "id": "d24-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 12",
+        "minutes": 25
+      },
+      {
+        "id": "d24-net",
+        "subject": ".NET",
+        "topic": "Redis basics — install, StackExchange.Redis setup",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 25,
+    "week": 5,
+    "items": [
+      {
+        "id": "d25-cert",
+        "subject": "AZ-900",
+        "topic": "Compute services — VMs, VM Scale Sets, App Services, Containers, Functions",
+        "minutes": 100
+      },
+      {
+        "id": "d25-dsa",
+        "subject": "DSA",
+        "topic": "Strings: sliding window — longest substring without repeating characters",
+        "minutes": 100
+      },
+      {
+        "id": "d25-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 2",
+        "minutes": 60
+      },
+      {
+        "id": "d25-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 13",
+        "minutes": 25
+      },
+      {
+        "id": "d25-net",
+        "subject": ".NET",
+        "topic": "Implement caching for GET endpoints",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 26,
+    "week": 5,
+    "items": [
+      {
+        "id": "d26-cert",
+        "subject": "AZ-900",
+        "topic": "Networking services — VNets, VPN Gateway, ExpressRoute, Load Balancer",
+        "minutes": 100
+      },
+      {
+        "id": "d26-dsa",
+        "subject": "DSA",
+        "topic": "Strings: practice problems (easy) x5",
+        "minutes": 100
+      },
+      {
+        "id": "d26-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 3",
+        "minutes": 60
+      },
+      {
+        "id": "d26-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 14",
+        "minutes": 25
+      },
+      {
+        "id": "d26-net",
+        "subject": ".NET",
+        "topic": "Cache invalidation strategies",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 27,
+    "week": 5,
+    "items": [
+      {
+        "id": "d27-cert",
+        "subject": "AZ-900",
+        "topic": "Storage services — Blob, File, Disk, Queue storage",
+        "minutes": 100
+      },
+      {
+        "id": "d27-dsa",
+        "subject": "DSA",
+        "topic": "Math for DSA: GCD/LCM, prime numbers, factorial",
+        "minutes": 100
+      },
+      {
+        "id": "d27-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 4",
+        "minutes": 60
+      },
+      {
+        "id": "d27-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 15",
+        "minutes": 25
+      },
+      {
+        "id": "d27-net",
+        "subject": ".NET",
+        "topic": "Distributed caching concepts",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 28,
+    "week": 5,
+    "items": [
+      {
+        "id": "d28-cert",
+        "subject": "AZ-900",
+        "topic": "Storage redundancy options — LRS, ZRS, GRS, RA-GRS",
+        "minutes": 100
+      },
+      {
+        "id": "d28-dsa",
+        "subject": "DSA",
+        "topic": "Bit manipulation basics — AND/OR/XOR, check even/odd, count set bits",
+        "minutes": 100
+      },
+      {
+        "id": "d28-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 5",
+        "minutes": 60
+      },
+      {
+        "id": "d28-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 16",
+        "minutes": 25
+      },
+      {
+        "id": "d28-net",
+        "subject": ".NET",
+        "topic": "Redis — practice: cache a heavy query end-to-end",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 29,
+    "week": 5,
+    "items": [
+      {
+        "id": "d29-cert",
+        "subject": "AZ-900",
+        "topic": "Identity & access — Azure AD, MFA, Conditional Access, RBAC, Zero Trust",
+        "minutes": 100
+      },
+      {
+        "id": "d29-dsa",
+        "subject": "DSA",
+        "topic": "Recursion: concept, call stack, base case & recursive case",
+        "minutes": 100
+      },
+      {
+        "id": "d29-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 6",
+        "minutes": 60
+      },
+      {
+        "id": "d29-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 17",
+        "minutes": 25
+      },
+      {
+        "id": "d29-net",
+        "subject": ".NET",
+        "topic": "Serilog setup — structured logging",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 30,
+    "week": 5,
+    "items": [
+      {
+        "id": "d30-cert",
+        "subject": "AZ-900",
+        "topic": "Security tools — Defender for Cloud, Key Vault, NSGs, DDoS Protection",
+        "minutes": 100
+      },
+      {
+        "id": "d30-dsa",
+        "subject": "DSA",
+        "topic": "Recursion: factorial, sum of n numbers, power function",
+        "minutes": 100
+      },
+      {
+        "id": "d30-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 7",
+        "minutes": 60
+      },
+      {
+        "id": "d30-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 18",
+        "minutes": 25
+      },
+      {
+        "id": "d30-net",
+        "subject": ".NET",
+        "topic": "Application Insights integration",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 31,
+    "week": 6,
+    "items": [
+      {
+        "id": "d31-cert",
+        "subject": "AZ-900",
+        "topic": "Cost management — pricing calculator, TCO calculator, budgets",
+        "minutes": 100
+      },
+      {
+        "id": "d31-dsa",
+        "subject": "DSA",
+        "topic": "Recursion: Fibonacci — recursive vs memoized",
+        "minutes": 100
+      },
+      {
+        "id": "d31-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 8",
+        "minutes": 60
+      },
+      {
+        "id": "d31-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 19",
+        "minutes": 25
+      },
+      {
+        "id": "d31-net",
+        "subject": ".NET",
+        "topic": "Correlation IDs & request logging middleware",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 32,
+    "week": 6,
+    "items": [
+      {
+        "id": "d32-cert",
+        "subject": "AZ-900",
+        "topic": "Governance — Azure Policy, Blueprints, Resource Locks, Tags",
+        "minutes": 100
+      },
+      {
+        "id": "d32-dsa",
+        "subject": "DSA",
+        "topic": "Recursion: practice — reverse an array/string recursively",
+        "minutes": 100
+      },
+      {
+        "id": "d32-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 9",
+        "minutes": 60
+      },
+      {
+        "id": "d32-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 20",
+        "minutes": 25
+      },
+      {
+        "id": "d32-net",
+        "subject": ".NET",
+        "topic": "Logging — practice: add logging across the API",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 33,
+    "week": 6,
+    "items": [
+      {
+        "id": "d33-cert",
+        "subject": "AZ-900",
+        "topic": "Management & deployment tools — Portal, CLI, PowerShell, ARM templates, Cloud Shell",
+        "minutes": 100
+      },
+      {
+        "id": "d33-dsa",
+        "subject": "DSA",
+        "topic": "Recursion: backtracking intro — concept & subsets problem",
+        "minutes": 100
+      },
+      {
+        "id": "d33-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 10",
+        "minutes": 60
+      },
+      {
+        "id": "d33-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 21",
+        "minutes": 25
+      },
+      {
+        "id": "d33-net",
+        "subject": ".NET",
+        "topic": "Docker course — containers & images fundamentals",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 34,
+    "week": 6,
+    "items": [
+      {
+        "id": "d34-cert",
+        "subject": "AZ-900",
+        "topic": "Monitoring tools — Azure Monitor, Advisor, Service Health",
+        "minutes": 100
+      },
+      {
+        "id": "d34-dsa",
+        "subject": "DSA",
+        "topic": "Recursion: backtracking practice — permutations of a string",
+        "minutes": 100
+      },
+      {
+        "id": "d34-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 11",
+        "minutes": 60
+      },
+      {
+        "id": "d34-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 22",
+        "minutes": 25
+      },
+      {
+        "id": "d34-net",
+        "subject": ".NET",
+        "topic": "Docker course — Dockerfile basics, build & run",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 35,
+    "week": 6,
+    "items": [
+      {
+        "id": "d35-cert",
+        "subject": "AZ-900",
+        "topic": "Privacy, compliance & trust — Trust Center, Compliance Manager, GDPR basics, SLA",
+        "minutes": 100
+      },
+      {
+        "id": "d35-dsa",
+        "subject": "DSA",
+        "topic": "Searching: Linear Search — concept & implementation",
+        "minutes": 100
+      },
+      {
+        "id": "d35-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 12",
+        "minutes": 60
+      },
+      {
+        "id": "d35-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 23",
+        "minutes": 25
+      },
+      {
+        "id": "d35-net",
+        "subject": ".NET",
+        "topic": "Docker course — Docker Compose",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 36,
+    "week": 6,
+    "items": [
+      {
+        "id": "d36-cert",
+        "subject": "AZ-900",
+        "topic": "Full topic revision — review study guide checklist, note weak areas",
+        "minutes": 100
+      },
+      {
+        "id": "d36-dsa",
+        "subject": "DSA",
+        "topic": "Searching: Binary Search — iterative & recursive implementation",
+        "minutes": 100
+      },
+      {
+        "id": "d36-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 13",
+        "minutes": 60
+      },
+      {
+        "id": "d36-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 24",
+        "minutes": 25
+      },
+      {
+        "id": "d36-net",
+        "subject": ".NET",
+        "topic": "Dockerize your Web API project",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 37,
+    "week": 7,
+    "items": [
+      {
+        "id": "d37-cert",
+        "subject": "AZ-900",
+        "topic": "Practice test 1 (official practice assessment) + review mistakes",
+        "minutes": 100
+      },
+      {
+        "id": "d37-dsa",
+        "subject": "DSA",
+        "topic": "Searching: Binary Search variants — first/last occurrence, search in rotated array",
+        "minutes": 100
+      },
+      {
+        "id": "d37-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 14",
+        "minutes": 60
+      },
+      {
+        "id": "d37-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 25",
+        "minutes": 25
+      },
+      {
+        "id": "d37-net",
+        "subject": ".NET",
+        "topic": "Docker — volumes, networks, environment configs",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 38,
+    "week": 7,
+    "items": [
+      {
+        "id": "d38-cert",
+        "subject": "AZ-900",
+        "topic": "Practice test 2 + review weak areas again",
+        "minutes": 100
+      },
+      {
+        "id": "d38-dsa",
+        "subject": "DSA",
+        "topic": "Sorting: Bubble Sort",
+        "minutes": 100
+      },
+      {
+        "id": "d38-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 15",
+        "minutes": 60
+      },
+      {
+        "id": "d38-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 26",
+        "minutes": 25
+      },
+      {
+        "id": "d38-net",
+        "subject": ".NET",
+        "topic": "Docker — practice: full app + DB in Docker Compose",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 39,
+    "week": 7,
+    "items": [
+      {
+        "id": "d39-cert",
+        "subject": "AZ-900",
+        "topic": "Final revision — quick notes/flashcards on weak areas",
+        "minutes": 100
+      },
+      {
+        "id": "d39-dsa",
+        "subject": "DSA",
+        "topic": "Sorting: Selection Sort",
+        "minutes": 100
+      },
+      {
+        "id": "d39-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 16",
+        "minutes": 60
+      },
+      {
+        "id": "d39-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 27",
+        "minutes": 25
+      },
+      {
+        "id": "d39-net",
+        "subject": ".NET",
+        "topic": "SignalR basics — Hubs & Clients",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 40,
+    "week": 7,
+    "items": [
+      {
+        "id": "d40-cert",
+        "subject": "AZ-900",
+        "topic": "Light review — book/attempt the exam",
+        "minutes": 100
+      },
+      {
+        "id": "d40-dsa",
+        "subject": "DSA",
+        "topic": "Sorting: Insertion Sort",
+        "minutes": 100
+      },
+      {
+        "id": "d40-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 17",
+        "minutes": 60
+      },
+      {
+        "id": "d40-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 28",
+        "minutes": 25
+      },
+      {
+        "id": "d40-net",
+        "subject": ".NET",
+        "topic": "Implement a real-time notification Hub in your API",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 41,
+    "week": 7,
+    "items": [
+      {
+        "id": "d41-dsa",
+        "subject": "DSA",
+        "topic": "Sorting: Merge Sort",
+        "minutes": 100
+      },
+      {
+        "id": "d41-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 18",
+        "minutes": 60
+      },
+      {
+        "id": "d41-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 29",
+        "minutes": 25
+      },
+      {
+        "id": "d41-net",
+        "subject": ".NET",
+        "topic": "SignalR groups & connection management",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 42,
+    "week": 7,
+    "items": [
+      {
+        "id": "d42-dsa",
+        "subject": "DSA",
+        "topic": "Sorting: Quick Sort",
+        "minutes": 100
+      },
+      {
+        "id": "d42-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 19",
+        "minutes": 60
+      },
+      {
+        "id": "d42-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 30",
+        "minutes": 25
+      },
+      {
+        "id": "d42-net",
+        "subject": ".NET",
+        "topic": "SignalR — client integration (JS/Angular)",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 43,
+    "week": 8,
+    "items": [
+      {
+        "id": "d43-dsa",
+        "subject": "DSA",
+        "topic": "Sorting: complexity comparison + practice problems",
+        "minutes": 100
+      },
+      {
+        "id": "d43-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 20",
+        "minutes": 60
+      },
+      {
+        "id": "d43-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 31",
+        "minutes": 25
+      },
+      {
+        "id": "d43-net",
+        "subject": ".NET",
+        "topic": "SignalR — practice: real-time feature end-to-end",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 44,
+    "week": 8,
+    "items": [
+      {
+        "id": "d44-dsa",
+        "subject": "DSA",
+        "topic": "Revision: mixed practice — Arrays, Strings, Recursion, Sorting, Searching",
+        "minutes": 100
+      },
+      {
+        "id": "d44-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 21",
+        "minutes": 60
+      },
+      {
+        "id": "d44-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 32",
+        "minutes": 25
+      },
+      {
+        "id": "d44-net",
+        "subject": ".NET",
+        "topic": "xUnit basics — writing your first tests",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 45,
+    "week": 8,
+    "items": [
+      {
+        "id": "d45-dsa",
+        "subject": "DSA",
+        "topic": "LinkedList: concept, Node class, singly linked list — create & traverse",
+        "minutes": 100
+      },
+      {
+        "id": "d45-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 22",
+        "minutes": 60
+      },
+      {
+        "id": "d45-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 33",
+        "minutes": 25
+      },
+      {
+        "id": "d45-net",
+        "subject": ".NET",
+        "topic": "Moq — mocking dependencies",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 46,
+    "week": 8,
+    "items": [
+      {
+        "id": "d46-dsa",
+        "subject": "DSA",
+        "topic": "LinkedList: insertion — at head, at tail, at a given position",
+        "minutes": 100
+      },
+      {
+        "id": "d46-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 23",
+        "minutes": 60
+      },
+      {
+        "id": "d46-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 34",
+        "minutes": 25
+      },
+      {
+        "id": "d46-net",
+        "subject": ".NET",
+        "topic": "Unit testing — Services & Repositories layer",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 47,
+    "week": 8,
+    "items": [
+      {
+        "id": "d47-dsa",
+        "subject": "DSA",
+        "topic": "LinkedList: deletion — at head, at tail, at a given position",
+        "minutes": 100
+      },
+      {
+        "id": "d47-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 24",
+        "minutes": 60
+      },
+      {
+        "id": "d47-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 35",
+        "minutes": 25
+      },
+      {
+        "id": "d47-net",
+        "subject": ".NET",
+        "topic": "Unit testing — Controllers layer",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 48,
+    "week": 8,
+    "items": [
+      {
+        "id": "d48-dsa",
+        "subject": "DSA",
+        "topic": "LinkedList: reverse a linked list — iterative & recursive",
+        "minutes": 100
+      },
+      {
+        "id": "d48-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 25",
+        "minutes": 60
+      },
+      {
+        "id": "d48-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 36",
+        "minutes": 25
+      },
+      {
+        "id": "d48-net",
+        "subject": ".NET",
+        "topic": "Unit testing — practice: cover core API logic",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 49,
+    "week": 9,
+    "items": [
+      {
+        "id": "d49-dsa",
+        "subject": "DSA",
+        "topic": "LinkedList: detect a cycle — Floyd’s algorithm (tortoise & hare)",
+        "minutes": 100
+      },
+      {
+        "id": "d49-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 26",
+        "minutes": 60
+      },
+      {
+        "id": "d49-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 37",
+        "minutes": 25
+      },
+      {
+        "id": "d49-net",
+        "subject": ".NET",
+        "topic": "Elasticsearch basics — concepts, indexing",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 50,
+    "week": 9,
+    "items": [
+      {
+        "id": "d50-dsa",
+        "subject": "DSA",
+        "topic": "LinkedList: find middle element, Nth node from end",
+        "minutes": 100
+      },
+      {
+        "id": "d50-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 27",
+        "minutes": 60
+      },
+      {
+        "id": "d50-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 38",
+        "minutes": 25
+      },
+      {
+        "id": "d50-net",
+        "subject": ".NET",
+        "topic": "Elasticsearch — .NET client setup",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 51,
+    "week": 9,
+    "items": [
+      {
+        "id": "d51-dsa",
+        "subject": "DSA",
+        "topic": "LinkedList: doubly linked list — concept & basic operations",
+        "minutes": 100
+      },
+      {
+        "id": "d51-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 28",
+        "minutes": 60
+      },
+      {
+        "id": "d51-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 39",
+        "minutes": 25
+      },
+      {
+        "id": "d51-net",
+        "subject": ".NET",
+        "topic": "Implement a search endpoint using Elasticsearch",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 52,
+    "week": 9,
+    "items": [
+      {
+        "id": "d52-dsa",
+        "subject": "DSA",
+        "topic": "Stack: concept & implementation (array-based & using C# Stack<T>)",
+        "minutes": 100
+      },
+      {
+        "id": "d52-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 29",
+        "minutes": 60
+      },
+      {
+        "id": "d52-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 40",
+        "minutes": 25
+      },
+      {
+        "id": "d52-net",
+        "subject": ".NET",
+        "topic": "Elasticsearch — filters, aggregations",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 53,
+    "week": 9,
+    "items": [
+      {
+        "id": "d53-dsa",
+        "subject": "DSA",
+        "topic": "Stack: balanced parentheses problem",
+        "minutes": 100
+      },
+      {
+        "id": "d53-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 30",
+        "minutes": 60
+      },
+      {
+        "id": "d53-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 41",
+        "minutes": 25
+      },
+      {
+        "id": "d53-net",
+        "subject": ".NET",
+        "topic": "Elasticsearch — practice: full-text search feature",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 54,
+    "week": 9,
+    "items": [
+      {
+        "id": "d54-dsa",
+        "subject": "DSA",
+        "topic": "Stack: next greater element problem",
+        "minutes": 100
+      },
+      {
+        "id": "d54-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 31",
+        "minutes": 60
+      },
+      {
+        "id": "d54-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 42",
+        "minutes": 25
+      },
+      {
+        "id": "d54-net",
+        "subject": ".NET",
+        "topic": "Rate Limiting middleware in ASP.NET Core",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 55,
+    "week": 10,
+    "items": [
+      {
+        "id": "d55-dsa",
+        "subject": "DSA",
+        "topic": "Stack: practice problems",
+        "minutes": 100
+      },
+      {
+        "id": "d55-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 32",
+        "minutes": 60
+      },
+      {
+        "id": "d55-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 43",
+        "minutes": 25
+      },
+      {
+        "id": "d55-net",
+        "subject": ".NET",
+        "topic": "Health Checks — add to API + DB checks",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 56,
+    "week": 10,
+    "items": [
+      {
+        "id": "d56-dsa",
+        "subject": "DSA",
+        "topic": "Queue: concept & implementation (using C# Queue<T>)",
+        "minutes": 100
+      },
+      {
+        "id": "d56-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 33",
+        "minutes": 60
+      },
+      {
+        "id": "d56-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 44",
+        "minutes": 25
+      },
+      {
+        "id": "d56-net",
+        "subject": ".NET",
+        "topic": "Practice: apply rate limiting + health checks",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 57,
+    "week": 10,
+    "items": [
+      {
+        "id": "d57-dsa",
+        "subject": "DSA",
+        "topic": "Queue: circular queue",
+        "minutes": 100
+      },
+      {
+        "id": "d57-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 34",
+        "minutes": 60
+      },
+      {
+        "id": "d57-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 45",
+        "minutes": 25
+      },
+      {
+        "id": "d57-net",
+        "subject": ".NET",
+        "topic": "Kubernetes course — pods, nodes, clusters fundamentals",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 58,
+    "week": 10,
+    "items": [
+      {
+        "id": "d58-dsa",
+        "subject": "DSA",
+        "topic": "Queue: deque (double-ended queue)",
+        "minutes": 100
+      },
+      {
+        "id": "d58-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 35",
+        "minutes": 60
+      },
+      {
+        "id": "d58-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 46",
+        "minutes": 25
+      },
+      {
+        "id": "d58-net",
+        "subject": ".NET",
+        "topic": "Kubernetes course — deployments & services",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 59,
+    "week": 10,
+    "items": [
+      {
+        "id": "d59-dsa",
+        "subject": "DSA",
+        "topic": "Queue: practice — implement a stack using two queues",
+        "minutes": 100
+      },
+      {
+        "id": "d59-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 36",
+        "minutes": 60
+      },
+      {
+        "id": "d59-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 47",
+        "minutes": 25
+      },
+      {
+        "id": "d59-net",
+        "subject": ".NET",
+        "topic": "Kubernetes course — ConfigMaps & Secrets",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 60,
+    "week": 10,
+    "items": [
+      {
+        "id": "d60-dsa",
+        "subject": "DSA",
+        "topic": "Hashing: HashSet/Dictionary in C#, how hashing works, collision handling",
+        "minutes": 100
+      },
+      {
+        "id": "d60-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 37",
+        "minutes": 60
+      },
+      {
+        "id": "d60-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 48",
+        "minutes": 25
+      },
+      {
+        "id": "d60-net",
+        "subject": ".NET",
+        "topic": "Kubernetes — deploy your dockerized API to Minikube",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 61,
+    "week": 11,
+    "items": [
+      {
+        "id": "d61-dsa",
+        "subject": "DSA",
+        "topic": "Hashing: practice — two-sum, first non-repeating character",
+        "minutes": 100
+      },
+      {
+        "id": "d61-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 38",
+        "minutes": 60
+      },
+      {
+        "id": "d61-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 49",
+        "minutes": 25
+      },
+      {
+        "id": "d61-net",
+        "subject": ".NET",
+        "topic": "Kubernetes — scaling & rolling updates",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 62,
+    "week": 11,
+    "items": [
+      {
+        "id": "d62-dsa",
+        "subject": "DSA",
+        "topic": "Hashing: practice — group anagrams, subarray sum equals k",
+        "minutes": 100
+      },
+      {
+        "id": "d62-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 39",
+        "minutes": 60
+      },
+      {
+        "id": "d62-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 50",
+        "minutes": 25
+      },
+      {
+        "id": "d62-net",
+        "subject": ".NET",
+        "topic": "Kubernetes — Ingress basics",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 63,
+    "week": 11,
+    "items": [
+      {
+        "id": "d63-dsa",
+        "subject": "DSA",
+        "topic": "Revision: mixed practice — LinkedList, Stack, Queue, Hashing",
+        "minutes": 100
+      },
+      {
+        "id": "d63-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 40",
+        "minutes": 60
+      },
+      {
+        "id": "d63-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 51",
+        "minutes": 25
+      },
+      {
+        "id": "d63-net",
+        "subject": ".NET",
+        "topic": "Kubernetes — practice: full deployment end-to-end",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 64,
+    "week": 11,
+    "items": [
+      {
+        "id": "d64-dsa",
+        "subject": "DSA",
+        "topic": "Trees: binary tree concept & terminology, Node class in C#",
+        "minutes": 100
+      },
+      {
+        "id": "d64-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 41",
+        "minutes": 60
+      },
+      {
+        "id": "d64-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 52",
+        "minutes": 25
+      },
+      {
+        "id": "d64-net",
+        "subject": ".NET",
+        "topic": "RabbitMQ basics — exchanges, queues, bindings",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 65,
+    "week": 11,
+    "items": [
+      {
+        "id": "d65-dsa",
+        "subject": "DSA",
+        "topic": "Trees: traversals — inorder, preorder, postorder (recursive)",
+        "minutes": 100
+      },
+      {
+        "id": "d65-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 42",
+        "minutes": 60
+      },
+      {
+        "id": "d65-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 53",
+        "minutes": 25
+      },
+      {
+        "id": "d65-net",
+        "subject": ".NET",
+        "topic": "RabbitMQ — producer implementation in .NET",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 66,
+    "week": 11,
+    "items": [
+      {
+        "id": "d66-dsa",
+        "subject": "DSA",
+        "topic": "Trees: level order traversal (BFS) using a Queue",
+        "minutes": 100
+      },
+      {
+        "id": "d66-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 43",
+        "minutes": 60
+      },
+      {
+        "id": "d66-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 54",
+        "minutes": 25
+      },
+      {
+        "id": "d66-net",
+        "subject": ".NET",
+        "topic": "RabbitMQ — consumer implementation in .NET",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 67,
+    "week": 12,
+    "items": [
+      {
+        "id": "d67-dsa",
+        "subject": "DSA",
+        "topic": "Trees: height, diameter, count nodes",
+        "minutes": 100
+      },
+      {
+        "id": "d67-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 44",
+        "minutes": 60
+      },
+      {
+        "id": "d67-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 55",
+        "minutes": 25
+      },
+      {
+        "id": "d67-net",
+        "subject": ".NET",
+        "topic": "RabbitMQ — message patterns (pub/sub, work queues)",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 68,
+    "week": 12,
+    "items": [
+      {
+        "id": "d68-dsa",
+        "subject": "DSA",
+        "topic": "Binary Search Tree: concept & insertion",
+        "minutes": 100
+      },
+      {
+        "id": "d68-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 45",
+        "minutes": 60
+      },
+      {
+        "id": "d68-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 56",
+        "minutes": 25
+      },
+      {
+        "id": "d68-net",
+        "subject": ".NET",
+        "topic": "RabbitMQ — error handling & dead-letter queues",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 69,
+    "week": 12,
+    "items": [
+      {
+        "id": "d69-dsa",
+        "subject": "DSA",
+        "topic": "Binary Search Tree: search & deletion",
+        "minutes": 100
+      },
+      {
+        "id": "d69-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 46",
+        "minutes": 60
+      },
+      {
+        "id": "d69-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 57",
+        "minutes": 25
+      },
+      {
+        "id": "d69-net",
+        "subject": ".NET",
+        "topic": "RabbitMQ — practice: order-processing flow end-to-end",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 70,
+    "week": 12,
+    "items": [
+      {
+        "id": "d70-dsa",
+        "subject": "DSA",
+        "topic": "Binary Search Tree: validate a BST, find min/max",
+        "minutes": 100
+      },
+      {
+        "id": "d70-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 47",
+        "minutes": 60
+      },
+      {
+        "id": "d70-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 58",
+        "minutes": 25
+      },
+      {
+        "id": "d70-net",
+        "subject": ".NET",
+        "topic": "API Gateway concept — why microservices need one",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 71,
+    "week": 12,
+    "items": [
+      {
+        "id": "d71-dsa",
+        "subject": "DSA",
+        "topic": "Trees: practice — lowest common ancestor, mirror a tree",
+        "minutes": 100
+      },
+      {
+        "id": "d71-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 48",
+        "minutes": 60
+      },
+      {
+        "id": "d71-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 59",
+        "minutes": 25
+      },
+      {
+        "id": "d71-net",
+        "subject": ".NET",
+        "topic": "YARP — setup reverse proxy basics",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 72,
+    "week": 12,
+    "items": [
+      {
+        "id": "d72-dsa",
+        "subject": "DSA",
+        "topic": "Heaps: concept — min-heap/max-heap, array representation",
+        "minutes": 100
+      },
+      {
+        "id": "d72-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 49",
+        "minutes": 60
+      },
+      {
+        "id": "d72-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 60",
+        "minutes": 25
+      },
+      {
+        "id": "d72-net",
+        "subject": ".NET",
+        "topic": "YARP — routing to multiple services",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 73,
+    "week": 13,
+    "items": [
+      {
+        "id": "d73-dsa",
+        "subject": "DSA",
+        "topic": "Heaps: priority queue in C# (PriorityQueue<T,P>)",
+        "minutes": 100
+      },
+      {
+        "id": "d73-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 50",
+        "minutes": 60
+      },
+      {
+        "id": "d73-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 61",
+        "minutes": 25
+      },
+      {
+        "id": "d73-net",
+        "subject": ".NET",
+        "topic": "API Gateway — practice: gateway in front of 2 services",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 74,
+    "week": 13,
+    "items": [
+      {
+        "id": "d74-dsa",
+        "subject": "DSA",
+        "topic": "Heaps: practice — kth largest element, top k frequent elements",
+        "minutes": 100
+      },
+      {
+        "id": "d74-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 51",
+        "minutes": 60
+      },
+      {
+        "id": "d74-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 62",
+        "minutes": 25
+      },
+      {
+        "id": "d74-net",
+        "subject": ".NET",
+        "topic": "gRPC basics — protobuf & service definitions",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 75,
+    "week": 13,
+    "items": [
+      {
+        "id": "d75-dsa",
+        "subject": "DSA",
+        "topic": "Revision: mixed practice — Trees, Heaps",
+        "minutes": 100
+      },
+      {
+        "id": "d75-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 52",
+        "minutes": 60
+      },
+      {
+        "id": "d75-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 63",
+        "minutes": 25
+      },
+      {
+        "id": "d75-net",
+        "subject": ".NET",
+        "topic": "gRPC — implement a service in .NET",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 76,
+    "week": 13,
+    "items": [
+      {
+        "id": "d76-dsa",
+        "subject": "DSA",
+        "topic": "Graphs: concept & representation — adjacency list/matrix",
+        "minutes": 100
+      },
+      {
+        "id": "d76-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 53",
+        "minutes": 60
+      },
+      {
+        "id": "d76-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 64",
+        "minutes": 25
+      },
+      {
+        "id": "d76-net",
+        "subject": ".NET",
+        "topic": "gRPC — client-server communication test",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 77,
+    "week": 13,
+    "items": [
+      {
+        "id": "d77-dsa",
+        "subject": "DSA",
+        "topic": "Graphs: BFS traversal",
+        "minutes": 100
+      },
+      {
+        "id": "d77-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 54",
+        "minutes": 60
+      },
+      {
+        "id": "d77-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 65",
+        "minutes": 25
+      },
+      {
+        "id": "d77-net",
+        "subject": ".NET",
+        "topic": "gRPC — practice: use for inter-service calls",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 78,
+    "week": 13,
+    "items": [
+      {
+        "id": "d78-dsa",
+        "subject": "DSA",
+        "topic": "Graphs: DFS traversal",
+        "minutes": 100
+      },
+      {
+        "id": "d78-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 55",
+        "minutes": 60
+      },
+      {
+        "id": "d78-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 66",
+        "minutes": 25
+      },
+      {
+        "id": "d78-net",
+        "subject": ".NET",
+        "topic": "Microservices — design 2-3 services for your project (plan)",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 79,
+    "week": 14,
+    "items": [
+      {
+        "id": "d79-dsa",
+        "subject": "DSA",
+        "topic": "Graphs: practice — number of connected components / islands",
+        "minutes": 100
+      },
+      {
+        "id": "d79-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 56",
+        "minutes": 60
+      },
+      {
+        "id": "d79-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 67",
+        "minutes": 25
+      },
+      {
+        "id": "d79-net",
+        "subject": ".NET",
+        "topic": "Microservices — scaffold Service A (e.g. Orders)",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 80,
+    "week": 14,
+    "items": [
+      {
+        "id": "d80-dsa",
+        "subject": "DSA",
+        "topic": "Graphs: shortest path intro — Dijkstra’s algorithm overview",
+        "minutes": 100
+      },
+      {
+        "id": "d80-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 57",
+        "minutes": 60
+      },
+      {
+        "id": "d80-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 68",
+        "minutes": 25
+      },
+      {
+        "id": "d80-net",
+        "subject": ".NET",
+        "topic": "Microservices — scaffold Service B (e.g. Inventory)",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 81,
+    "week": 14,
+    "items": [
+      {
+        "id": "d81-dsa",
+        "subject": "DSA",
+        "topic": "Graphs: practice problems",
+        "minutes": 100
+      },
+      {
+        "id": "d81-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 58",
+        "minutes": 60
+      },
+      {
+        "id": "d81-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 69",
+        "minutes": 25
+      },
+      {
+        "id": "d81-net",
+        "subject": ".NET",
+        "topic": "Microservices — connect services via RabbitMQ",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 82,
+    "week": 14,
+    "items": [
+      {
+        "id": "d82-dsa",
+        "subject": "DSA",
+        "topic": "Dynamic Programming: concept — memoization vs tabulation",
+        "minutes": 100
+      },
+      {
+        "id": "d82-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 59",
+        "minutes": 60
+      },
+      {
+        "id": "d82-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 70",
+        "minutes": 25
+      },
+      {
+        "id": "d82-net",
+        "subject": ".NET",
+        "topic": "Microservices — add API Gateway in front of both services",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 83,
+    "week": 14,
+    "items": [
+      {
+        "id": "d83-dsa",
+        "subject": "DSA",
+        "topic": "DP: Fibonacci with DP, climbing stairs",
+        "minutes": 100
+      },
+      {
+        "id": "d83-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 60",
+        "minutes": 60
+      },
+      {
+        "id": "d83-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 71",
+        "minutes": 25
+      },
+      {
+        "id": "d83-net",
+        "subject": ".NET",
+        "topic": "Microservices — add gRPC for one sync call between services",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 84,
+    "week": 14,
+    "items": [
+      {
+        "id": "d84-dsa",
+        "subject": "DSA",
+        "topic": "DP: 0/1 knapsack problem",
+        "minutes": 100
+      },
+      {
+        "id": "d84-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 61",
+        "minutes": 60
+      },
+      {
+        "id": "d84-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 72",
+        "minutes": 25
+      },
+      {
+        "id": "d84-net",
+        "subject": ".NET",
+        "topic": "Microservices — Dockerize all services + Compose",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 85,
+    "week": 15,
+    "items": [
+      {
+        "id": "d85-dsa",
+        "subject": "DSA",
+        "topic": "DP: longest common subsequence",
+        "minutes": 100
+      },
+      {
+        "id": "d85-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 62",
+        "minutes": 60
+      },
+      {
+        "id": "d85-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 73",
+        "minutes": 25
+      },
+      {
+        "id": "d85-net",
+        "subject": ".NET",
+        "topic": "Microservices — practice: full flow test end-to-end",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 86,
+    "week": 15,
+    "items": [
+      {
+        "id": "d86-dsa",
+        "subject": "DSA",
+        "topic": "DP: practice problems",
+        "minutes": 100
+      },
+      {
+        "id": "d86-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 63",
+        "minutes": 60
+      },
+      {
+        "id": "d86-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 74",
+        "minutes": 25
+      },
+      {
+        "id": "d86-net",
+        "subject": ".NET",
+        "topic": "Polish Web API project — README, clean code pass",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 87,
+    "week": 15,
+    "items": [
+      {
+        "id": "d87-dsa",
+        "subject": "DSA",
+        "topic": "Greedy algorithms: concept & examples (activity selection, coin change)",
+        "minutes": 100
+      },
+      {
+        "id": "d87-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 64",
+        "minutes": 60
+      },
+      {
+        "id": "d87-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 75",
+        "minutes": 25
+      },
+      {
+        "id": "d87-net",
+        "subject": ".NET",
+        "topic": "Polish Microservices project — README, clean code pass",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 88,
+    "week": 15,
+    "items": [
+      {
+        "id": "d88-dsa",
+        "subject": "DSA",
+        "topic": "Greedy: practice problems",
+        "minutes": 100
+      },
+      {
+        "id": "d88-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 65",
+        "minutes": 60
+      },
+      {
+        "id": "d88-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 76",
+        "minutes": 25
+      },
+      {
+        "id": "d88-net",
+        "subject": ".NET",
+        "topic": "Push both projects to GitHub, write project descriptions",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 89,
+    "week": 15,
+    "items": [
+      {
+        "id": "d89-dsa",
+        "subject": "DSA",
+        "topic": "Full mixed revision — one problem from every topic covered",
+        "minutes": 100
+      },
+      {
+        "id": "d89-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 66",
+        "minutes": 60
+      },
+      {
+        "id": "d89-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 77",
+        "minutes": 25
+      },
+      {
+        "id": "d89-net",
+        "subject": ".NET",
+        "topic": "Update resume with new skills & projects",
+        "minutes": 90
+      }
+    ]
+  },
+  {
+    "day": 90,
+    "week": 15,
+    "items": [
+      {
+        "id": "d90-dsa",
+        "subject": "DSA",
+        "topic": "Mock interview practice — timed problem solving",
+        "minutes": 100
+      },
+      {
+        "id": "d90-py",
+        "subject": "Python",
+        "topic": "Python Practice — Problem Set 67",
+        "minutes": 60
+      },
+      {
+        "id": "d90-sql",
+        "subject": "SQL",
+        "topic": "SQL Practice — Problem Set 78",
+        "minutes": 25
+      },
+      {
+        "id": "d90-net",
+        "subject": ".NET",
+        "topic": "Final revision — review weak topics across DSA/.NET",
+        "minutes": 90
+      }
+    ]
+  }
+]

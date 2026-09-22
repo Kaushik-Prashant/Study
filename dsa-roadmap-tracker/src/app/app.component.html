@@ -1,0 +1,85 @@
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-mark">90</span>
+      <div class="brand-text">
+        <h1>90-Day Study Roadmap</h1>
+        <p>DSA &middot; Python &middot; SQL &middot; AI-200 &middot; AZ-900 &middot; .NET</p>
+      </div>
+    </div>
+    <button class="today-btn" (click)="jumpToToday()">Today &rarr; Day {{ todayDay }}</button>
+  </div>
+
+  <div class="progress-wrap">
+    <div class="progress-track">
+      <div class="progress-fill" [style.width.%]="progressPct()"></div>
+    </div>
+    <div class="progress-label">
+      <span>{{ doneCount() }} / {{ totalItems }} tasks done</span>
+      <span>{{ progressPct() }}%</span>
+    </div>
+  </div>
+</header>
+
+<main class="content">
+  <section class="week" *ngFor="let w of weeks">
+    <button
+      class="week-header"
+      [class.expanded]="isWeekExpanded(w.week)"
+      (click)="toggleWeek(w.week)"
+    >
+      <span class="week-title">Week {{ w.week }}</span>
+      <span class="week-days">Day {{ w.days[0].day }}&ndash;{{ w.days[w.days.length - 1].day }}</span>
+      <span class="week-progress">{{ weekDoneCount(w) }}/{{ weekTotalCount(w) }}</span>
+      <span class="chevron" [class.open]="isWeekExpanded(w.week)">&#9662;</span>
+    </button>
+
+    <div class="week-body" *ngIf="isWeekExpanded(w.week)">
+      <article
+        class="day-card"
+        *ngFor="let day of w.days"
+        [id]="'day-' + day.day"
+        [class.day-today]="day.day === todayDay"
+        [class.day-complete]="isDayComplete(day)"
+      >
+        <div class="day-head">
+          <span class="day-number">Day {{ day.day }}</span>
+          <span class="day-badge" *ngIf="day.day === todayDay">Today</span>
+          <span class="day-count">{{ dayDoneCount(day) }}/{{ day.items.length }}</span>
+        </div>
+
+        <ul class="item-list">
+          <li class="item" *ngFor="let item of day.items">
+            <label class="item-label">
+              <input
+                type="checkbox"
+                [checked]="isChecked(item.id)"
+                (change)="toggleItem(item.id)"
+              />
+              <span class="item-text" [class.item-done]="isChecked(item.id)">
+                <span class="subject-badge" [ngClass]="subjectClass(item.subject)">{{ item.subject }}</span>
+                {{ item.topic }}
+                <span class="item-minutes">{{ item.minutes }}m</span>
+              </span>
+            </label>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <button class="reset-btn" (click)="requestReset()">Reset all progress</button>
+</footer>
+
+<div class="modal-backdrop" *ngIf="showResetConfirm()">
+  <div class="modal">
+    <h2>Reset all progress?</h2>
+    <p>Ye saare 90 din ke checked items unchecked kar dega. Ye undo nahi hoga.</p>
+    <div class="modal-actions">
+      <button class="btn-secondary" (click)="cancelReset()">Cancel</button>
+      <button class="btn-danger" (click)="confirmReset()">Reset</button>
+    </div>
+  </div>
+</div>
