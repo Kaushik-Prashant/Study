@@ -1,1 +1,163 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg: #f7f7fb;
+  --surface: #ffffff;
+  --surface-2: #f1f1f7;
+  --border: #e3e3ec;
+  --text: #1c1c28;
+  --text-muted: #6b6b7d;
+  --accent: #7c3aed;
+  --accent-contrast: #ffffff;
+  --success: #16a34a;
+  --danger: #dc2626;
+  --warning: #d97706;
+
+  --azure: #2563eb;
+  --python: #0d9488;
+  --net: #e11d48;
+  --dsa: #ea580c;
+  --sql: #ca8a04;
+  --docker: #0ea5e9;
+  --kubernetes: #4338ca;
+  --devops: #059669;
+  --agentic: #db2777;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14141c;
+    --surface: #1c1c27;
+    --surface-2: #23232f;
+    --border: #32323f;
+    --text: #ececf3;
+    --text-muted: #9b9baa;
+    --accent: #a78bfa;
+    --accent-contrast: #14141c;
+    --success: #4ade80;
+    --danger: #f87171;
+    --warning: #fbbf24;
+
+    --azure: #60a5fa;
+    --python: #2dd4bf;
+    --net: #fb7185;
+    --dsa: #fb923c;
+    --sql: #facc15;
+    --docker: #38bdf8;
+    --kubernetes: #818cf8;
+    --devops: #34d399;
+    --agentic: #f472b6;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+/* ---- shared, reusable pieces used across page components ---- */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.progress-track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--success);
+  transition: width 0.3s ease;
+}
+
+.subject-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  padding: 2px 7px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.subject-azure { background: var(--azure); }
+.subject-python { background: var(--python); }
+.subject-dotnet { background: var(--net); }
+.subject-dsa { background: var(--dsa); }
+.subject-sql { background: var(--sql); }
+.subject-docker { background: var(--docker); }
+.subject-kubernetes { background: var(--kubernetes); }
+.subject-devops { background: var(--devops); }
+.subject-agentic { background: var(--agentic); }
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.status-completed {
+  background: color-mix(in srgb, var(--success) 18%, transparent);
+  color: var(--success);
+}
+
+.status-in-progress {
+  background: color-mix(in srgb, var(--warning) 18%, transparent);
+  color: var(--warning);
+}
+
+.status-not-started {
+  background: var(--surface-2);
+  color: var(--text-muted);
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.btn-secondary {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.btn-secondary:hover {
+  background: var(--border);
+}

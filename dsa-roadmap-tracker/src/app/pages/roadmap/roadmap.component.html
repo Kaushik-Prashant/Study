@@ -1,0 +1,63 @@
+<div class="roadmap-page">
+  <div class="page-head">
+    <div>
+      <h1>{{ data.totalDays }}-Day Roadmap</h1>
+      <p class="sub">Beginner &rarr; intermediate &rarr; advanced &rarr; interview prep, week by week.</p>
+    </div>
+    <button class="btn btn-primary" (click)="jumpToCurrent()">Jump to Current &middot; Day {{ progress.currentDay() }}</button>
+  </div>
+
+  <section class="week card" *ngFor="let w of weeks">
+    <button class="week-header" [class.expanded]="isWeekExpanded(w.week)" (click)="toggleWeek(w.week)">
+      <span class="week-title">Week {{ w.week }}</span>
+      <span class="week-days">Day {{ w.days[0].day }}&ndash;{{ w.days[w.days.length - 1].day }}</span>
+      <span class="week-progress">{{ weekDoneCount(w) }}/{{ weekTotalCount(w) }} &middot; {{ weekPct(w) }}%</span>
+      <span class="chevron" [class.open]="isWeekExpanded(w.week)">&#9662;</span>
+    </button>
+
+    <div class="week-body" *ngIf="isWeekExpanded(w.week)">
+      <div class="week-meta" *ngIf="meta(w.week) as m">
+        <div class="meta-row"><span class="meta-label">Objective</span><span>{{ m.objective }}</span></div>
+        <div class="meta-row"><span class="meta-label">Expected outcome</span><span>{{ m.outcome }}</span></div>
+        <div class="meta-row"><span class="meta-label">Practice / coding</span><span>{{ m.practice }}</span></div>
+        <div class="meta-row"><span class="meta-label">Interview prep</span><span>{{ m.interviewPrep }}</span></div>
+        <div class="meta-row"><span class="meta-label">Revision</span><span>{{ m.revision }}</span></div>
+        <div class="meta-row"><span class="meta-label">Estimated time</span><span>~{{ weekHours(w) }} hrs this week</span></div>
+      </div>
+
+      <article
+        class="day-card"
+        *ngFor="let day of w.days"
+        [id]="'day-' + day.day"
+        [class.day-today]="day.day === progress.currentDay()"
+        [class.day-complete]="isDayComplete(day)"
+      >
+        <div class="day-head">
+          <span class="day-number">Day {{ day.day }}</span>
+          <span class="day-badge" *ngIf="day.day === progress.currentDay()">Current</span>
+          <span class="day-badge day-badge-done" *ngIf="isDayComplete(day) && day.day !== progress.currentDay()">Completed</span>
+          <span class="day-count">{{ dayDoneCount(day) }}/{{ day.items.length }}</span>
+        </div>
+
+        <ul class="item-list">
+          <li class="item" *ngFor="let item of day.items">
+            <label class="item-label">
+              <input type="checkbox" [checked]="progress.isChecked(item.id)" (change)="progress.toggle(item.id)" />
+              <span class="item-text" [class.item-done]="progress.isChecked(item.id)">
+                <a
+                  class="subject-badge"
+                  [ngClass]="subjectClass(item.categoryId)"
+                  [routerLink]="['/topics', item.categoryId, item.topicId]"
+                  (click)="$event.stopPropagation()"
+                  >{{ item.topicName }}</a
+                >
+                {{ item.title }}
+                <span class="item-minutes">{{ item.minutes }}m</span>
+              </span>
+            </label>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </section>
+</div>

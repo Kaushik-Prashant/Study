@@ -1,0 +1,94 @@
+<div class="dash">
+  <div class="stats-row">
+    <div class="stat-chip">
+      <span class="stat-value">{{ overallPct() }}%</span>
+      <span class="stat-label">Overall Progress</span>
+    </div>
+    <div class="stat-chip">
+      <span class="stat-value">Day {{ currentDay() }}/{{ data.totalDays }}</span>
+      <span class="stat-label">Current Day</span>
+    </div>
+    <div class="stat-chip">
+      <span class="stat-value">{{ progress.doneCount() }}/{{ data.totalItems }}</span>
+      <span class="stat-label">Tasks Completed</span>
+    </div>
+    <div class="stat-chip">
+      <span class="stat-value">Week {{ currentWeek() }}</span>
+      <span class="stat-label">Current Week</span>
+    </div>
+  </div>
+
+  <section class="hero card">
+    <span class="hero-eyebrow">Current Study Day</span>
+    <h1>Day {{ currentDay() }} of {{ data.totalDays }}</h1>
+    <span class="hero-week">Week {{ currentWeek() }}</span>
+    <div class="hero-progress">
+      <div class="progress-track"><div class="progress-fill" [style.width.%]="currentDayPct()"></div></div>
+      <span class="hero-progress-label">{{ currentDayDoneCount() }} / {{ currentDayTotalCount() }} tasks completed</span>
+    </div>
+  </section>
+
+  <section class="day-tasks card" *ngIf="currentDayGroup() as day">
+    <div class="section-head">
+      <h2>Day {{ currentDay() }} Tasks</h2>
+      <a routerLink="/roadmap" class="btn btn-secondary">Open Roadmap</a>
+    </div>
+    <ul class="today-list">
+      <li *ngFor="let item of day.items">
+        <label class="today-item">
+          <input type="checkbox" [checked]="isChecked(item.id)" (change)="toggle(item.id)" />
+          <span class="item-text" [class.done]="isChecked(item.id)">
+            <span class="subject-badge" [ngClass]="subjectClass(item.categoryId)">{{ item.topicName }}</span>
+            {{ item.title }}
+            <span class="item-minutes">{{ item.minutes }}m</span>
+          </span>
+        </label>
+      </li>
+    </ul>
+  </section>
+
+  <div class="grid-2">
+    <section class="card compact-card">
+      <h2>Certification Progress</h2>
+      <div class="cert-row" *ngIf="ai200Topic as t">
+        <div class="cert-info"><strong>AI-200</strong><span>{{ progress.topicPct(t) }}%</span></div>
+        <div class="progress-track"><div class="progress-fill" [style.width.%]="progress.topicPct(t)"></div></div>
+      </div>
+      <div class="cert-row" *ngIf="az900Topic as t">
+        <div class="cert-info"><strong>AZ-900</strong><span>{{ progress.topicPct(t) }}%</span></div>
+        <div class="progress-track"><div class="progress-fill" [style.width.%]="progress.topicPct(t)"></div></div>
+      </div>
+    </section>
+
+    <section class="card compact-card">
+      <h2>Progress Breakdown</h2>
+      <div class="breakdown-row">
+        <span>Tasks completed</span>
+        <strong>{{ progress.doneCount() }} / {{ data.totalItems }}</strong>
+      </div>
+      <div class="breakdown-row">
+        <span>Topics completed</span>
+        <strong>{{ completedTopicsCount() }} / {{ totalTopics }}</strong>
+      </div>
+      <div class="breakdown-row">
+        <span>Days completed</span>
+        <strong>{{ daysCompleted() }} / {{ data.totalDays }}</strong>
+      </div>
+      <a routerLink="/topics" class="btn btn-secondary breakdown-link">Browse Topic Library</a>
+    </section>
+  </div>
+
+  <section class="card">
+    <div class="section-head">
+      <h2>Weekly Progress</h2>
+      <span class="next-milestone-note" *ngIf="upcomingMilestone() as m">Next milestone: {{ m.label }} ({{ m.pct }}%)</span>
+    </div>
+    <div class="week-list">
+      <div class="week-row" *ngFor="let w of weeklyChart()" [class.current]="w.week === currentWeek()">
+        <span class="week-row-label">Week {{ w.week }}</span>
+        <div class="progress-track week-row-track"><div class="progress-fill" [style.width.%]="w.pct"></div></div>
+        <span class="week-row-pct">{{ w.pct }}%</span>
+      </div>
+    </div>
+  </section>
+</div>

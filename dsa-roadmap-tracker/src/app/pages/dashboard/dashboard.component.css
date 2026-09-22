@@ -1,0 +1,270 @@
+:host {
+  display: block;
+}
+
+.dash {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  padding: 16px 18px;
+}
+
+h2 {
+  font-size: 13px;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+/* ---- top stats row ---- */
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.stat-chip {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat-value {
+  font-size: 17px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ---- hero: current study day ---- */
+
+.hero {
+  background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent) 65%, #4338ca));
+  color: #fff;
+  border: none;
+  padding: 18px 20px;
+}
+
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.85;
+}
+
+.hero h1 {
+  font-size: 22px;
+  margin: 4px 0 2px;
+}
+
+.hero-week {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.hero-progress {
+  margin-top: 12px;
+}
+
+.hero .progress-track {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.hero .progress-fill {
+  background: #fff;
+}
+
+.hero-progress-label {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+/* ---- day tasks ---- */
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.section-head h2 {
+  margin: 0;
+}
+
+.today-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.today-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 7px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.today-item:hover {
+  background: var(--surface-2);
+}
+
+.today-item input {
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--success);
+  flex: none;
+  cursor: pointer;
+}
+
+.item-text {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.item-text.done {
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+.item-minutes {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-left: 6px;
+}
+
+/* ---- compact secondary cards ---- */
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.compact-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-row {
+  margin-bottom: 10px;
+}
+
+.cert-row:last-child {
+  margin-bottom: 0;
+}
+
+.cert-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.cert-info span {
+  color: var(--text-muted);
+}
+
+.breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.breakdown-row:last-of-type {
+  border-bottom: none;
+}
+
+.breakdown-row span {
+  color: var(--text-muted);
+}
+
+.breakdown-row strong {
+  font-variant-numeric: tabular-nums;
+}
+
+.breakdown-link {
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+/* ---- weekly progress ---- */
+
+.next-milestone-note {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+.week-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.week-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 36px;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+.week-row.current {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+.week-row-label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.week-row.current .week-row-label {
+  color: var(--accent);
+}
+
+.week-row-track {
+  height: 6px;
+}
+
+.week-row-pct {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 700px) {
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}

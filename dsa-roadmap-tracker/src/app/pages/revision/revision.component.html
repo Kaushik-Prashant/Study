@@ -1,0 +1,53 @@
+<div class="revision-page">
+  <div class="page-head">
+    <h1>Revision</h1>
+    <p class="sub">Spaced revision — what to look back at, and interview questions worth re-answering.</p>
+  </div>
+
+  <section class="card">
+    <h2>Revision Checkpoints (built into the DSA plan)</h2>
+    <div class="topic-list" *ngIf="revisionCheckpoints.length; else emptyCheckpoints">
+      <a class="topic-row" *ngFor="let t of revisionCheckpoints" [routerLink]="['/topics', t.categoryId, t.topicId]">
+        <span class="subject-badge" [ngClass]="subjectClass(t.categoryId)">{{ t.categoryName }}</span>
+        <span class="topic-name">{{ t.topicName }}</span>
+        <span class="topic-count">{{ progress.topicDoneCount(t) }}/{{ t.items.length }}</span>
+      </a>
+    </div>
+    <ng-template #emptyCheckpoints><p class="empty">None yet.</p></ng-template>
+  </section>
+
+  <section class="card">
+    <h2>Due for Revision (completed 7+ days ago)</h2>
+    <div class="topic-list" *ngIf="dueForRevision().length; else emptyDue">
+      <a class="topic-row" *ngFor="let x of dueForRevision()" [routerLink]="['/topics', x.topic.categoryId, x.topic.topicId]">
+        <span class="subject-badge" [ngClass]="subjectClass(x.topic.categoryId)">{{ x.topic.categoryName }}</span>
+        <span class="topic-name">{{ x.topic.topicName }}</span>
+        <span class="topic-count">completed {{ x.lastDate }}</span>
+      </a>
+    </div>
+    <ng-template #emptyDue><p class="empty">Nothing due yet — completed topics show up here once they're 7+ days old.</p></ng-template>
+  </section>
+
+  <section class="card">
+    <h2>Previously Completed Topics</h2>
+    <div class="topic-list" *ngIf="completedTopics().length; else emptyCompleted">
+      <a class="topic-row" *ngFor="let x of completedTopics()" [routerLink]="['/topics', x.topic.categoryId, x.topic.topicId]">
+        <span class="subject-badge" [ngClass]="subjectClass(x.topic.categoryId)">{{ x.topic.categoryName }}</span>
+        <span class="topic-name">{{ x.topic.topicName }}</span>
+        <span class="topic-count">{{ x.lastDate }}</span>
+      </a>
+    </div>
+    <ng-template #emptyCompleted><p class="empty">No topics completed yet.</p></ng-template>
+  </section>
+
+  <section class="card">
+    <h2>Interview Questions to Revisit</h2>
+    <ul class="q-list" *ngIf="interviewQuestions().length; else emptyQ">
+      <li *ngFor="let q of interviewQuestions()">
+        <span class="q-topic">{{ q.topic.topicName }}</span>
+        {{ q.question }}
+      </li>
+    </ul>
+    <ng-template #emptyQ><p class="empty">Complete a topic to see its interview questions here.</p></ng-template>
+  </section>
+</div>

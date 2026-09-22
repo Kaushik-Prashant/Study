@@ -1,153 +1,98 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, HostListener, computed, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RoadmapDay } from './roadmap-data';
-import roadmapJson from '../assets/roadmap-data.json';
+import { FormsModule } from '@angular/forms';
+import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { DataService } from './core/data.service';
+import { ProgressService } from './core/progress.service';
 
-const PROGRESS_KEY = 'roadmap-progress-v1';
-const START_KEY = 'roadmap-start-date-v1';
-
-interface WeekGroup {
-  week: number;
-  days: RoadmapDay[];
+interface SearchResult {
+  kind: 'topic' | 'week';
+  label: string;
+  sublabel: string;
+  link: unknown[];
 }
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  readonly roadmap: RoadmapDay[] = roadmapJson as RoadmapDay[];
-  readonly totalItems: number = this.roadmap.reduce((sum, d) => sum + d.items.length, 0);
-  readonly weeks: WeekGroup[] = this.groupByWeek(this.roadmap);
+  readonly navItems = [
+    { path: '/', label: 'Dashboard', icon: '⌂' },
+    { path: '/roadmap', label: 'Roadmap', icon: '\u{1F5D3}' },
+    { path: '/topics', label: 'Topic Library', icon: '\u{1F4DA}' },
+    { path: '/revision', label: 'Revision', icon: '\u{1F504}' },
+    { path: '/milestones', label: 'Milestones', icon: '\u{1F3C1}' },
+  ];
 
-  readonly startDateStr: string = this.loadStartDate();
-  readonly todayDay: number = this.computeTodayDay(this.startDateStr);
+  sidebarOpen = signal(false);
+  searchOpen = signal(false);
+  query = signal('');
 
-  checked = signal<Record<string, boolean>>(this.loadProgress());
-  expandedWeek = signal<number>(Math.min(Math.ceil(this.todayDay / 6) || 1, this.weeks.length));
-  showResetConfirm = signal(false);
+  results = computed<SearchResult[]>(() => {
+    const q = this.query().trim().toLowerCase();
+    if (q.length < 2) return [];
+    const out: SearchResult[] = [];
 
-  doneCount = computed(() => Object.values(this.checked()).filter(Boolean).length);
-  progressPct = computed(() =>
-    this.totalItems === 0 ? 0 : Math.round((this.doneCount() / this.totalItems) * 100)
-  );
-
-  dayDoneCount(day: RoadmapDay): number {
-    const c = this.checked();
-    return day.items.filter((it) => c[it.id]).length;
-  }
-
-  isDayComplete(day: RoadmapDay): boolean {
-    return this.dayDoneCount(day) === day.items.length;
-  }
-
-  weekDoneCount(w: WeekGroup): number {
-    return w.days.reduce((sum, d) => sum + this.dayDoneCount(d), 0);
-  }
-
-  weekTotalCount(w: WeekGroup): number {
-    return w.days.reduce((sum, d) => sum + d.items.length, 0);
-  }
-
-  toggleItem(id: string): void {
-    const c = { ...this.checked() };
-    c[id] = !c[id];
-    this.checked.set(c);
-    this.saveProgress(c);
-  }
-
-  isChecked(id: string): boolean {
-    return !!this.checked()[id];
-  }
-
-  toggleWeek(week: number): void {
-    this.expandedWeek.set(this.expandedWeek() === week ? -1 : week);
-  }
-
-  isWeekExpanded(week: number): boolean {
-    return this.expandedWeek() === week;
-  }
-
-  jumpToToday(): void {
-    const week = Math.min(Math.ceil(this.todayDay / 6) || 1, this.weeks.length);
-    this.expandedWeek.set(week);
-    setTimeout(() => {
-      try {
-        document.getElementById('day-' + this.todayDay)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } catch {
-        /* ignore */
+    for (const cat of this.data.categories) {
+      for (const topic of cat.topics) {
+        const hay = (topic.topicName + ' ' + cat.categoryName + ' ' + topic.items.map((i) => i.title).join(' ')).toLowerCase();
+        if (hay.includes(q)) {
+          out.push({
+            kind: 'topic',
+            label: topic.topicName,
+            sublabel: cat.categoryName,
+            link: ['/topics', topic.categoryId, topic.topicId],
+          });
+        }
+        if (out.length >= 12) return out;
       }
-    }, 0);
-  }
-
-  requestReset(): void {
-    this.showResetConfirm.set(true);
-  }
-
-  cancelReset(): void {
-    this.showResetConfirm.set(false);
-  }
-
-  confirmReset(): void {
-    this.checked.set({});
-    this.saveProgress({});
-    this.showResetConfirm.set(false);
-  }
-
-  subjectClass(subject: string): string {
-    return 'subject-' + subject.toLowerCase().replace(/[^a-z0-9]/g, '');
-  }
-
-  private groupByWeek(roadmap: RoadmapDay[]): WeekGroup[] {
-    const map = new Map<number, RoadmapDay[]>();
-    for (const d of roadmap) {
-      if (!map.has(d.week)) map.set(d.week, []);
-      map.get(d.week)!.push(d);
     }
-    return Array.from(map.entries())
-      .sort((a, b) => a[0] - b[0])
-      .map(([week, days]) => ({ week, days }));
-  }
 
-  private loadProgress(): Record<string, boolean> {
-    try {
-      const raw = localStorage.getItem(PROGRESS_KEY);
-      return raw ? JSON.parse(raw) : {};
-    } catch {
-      return {};
-    }
-  }
-
-  private saveProgress(data: Record<string, boolean>): void {
-    try {
-      localStorage.setItem(PROGRESS_KEY, JSON.stringify(data));
-    } catch {
-      /* ignore */
-    }
-  }
-
-  private loadStartDate(): string {
-    try {
-      let d = localStorage.getItem(START_KEY);
-      if (!d) {
-        d = new Date().toISOString().slice(0, 10);
-        localStorage.setItem(START_KEY, d);
+    for (const w of this.data.weeks) {
+      const hay = `week ${w.week}`;
+      if (hay.includes(q)) {
+        out.push({ kind: 'week', label: `Week ${w.week}`, sublabel: `Day ${w.days[0].day}-${w.days[w.days.length - 1].day}`, link: ['/roadmap'] });
       }
-      return d;
-    } catch {
-      return new Date().toISOString().slice(0, 10);
     }
+
+    return out.slice(0, 12);
+  });
+
+  constructor(readonly data: DataService, readonly progress: ProgressService, private router: Router) {}
+
+  toggleSidebar(): void {
+    this.sidebarOpen.set(!this.sidebarOpen());
   }
 
-  private computeTodayDay(startDateStr: string): number {
-    const start = new Date(startDateStr);
-    const now = new Date();
-    start.setHours(0, 0, 0, 0);
-    now.setHours(0, 0, 0, 0);
-    const diffDays = Math.floor((now.getTime() - start.getTime()) / 86400000);
-    return Math.min(Math.max(diffDays + 1, 1), 90);
+  closeSidebar(): void {
+    this.sidebarOpen.set(false);
+  }
+
+  openSearch(): void {
+    this.searchOpen.set(true);
+  }
+
+  closeSearch(): void {
+    this.searchOpen.set(false);
+    this.query.set('');
+  }
+
+  goTo(link: unknown[]): void {
+    this.router.navigate(link as any[]);
+    this.closeSearch();
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  onKeydown(e: KeyboardEvent): void {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      this.searchOpen.set(true);
+    } else if (e.key === 'Escape') {
+      this.closeSearch();
+    }
   }
 }

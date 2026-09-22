@@ -1,0 +1,84 @@
+<ng-container *ngIf="topic() as t; else notFound">
+  <div class="topic-detail">
+    <a routerLink="/topics" class="back-link">&larr; All Topics</a>
+
+    <div class="topic-head card">
+      <div class="topic-head-top">
+        <span class="subject-badge" [ngClass]="subjectClass(t.categoryId)">{{ t.categoryName }}</span>
+        <span class="status-pill" [ngClass]="'status-' + status()">
+          {{ status() === 'completed' ? 'Completed' : status() === 'in-progress' ? 'In Progress' : 'Not Started' }}
+        </span>
+      </div>
+      <h1>{{ t.topicName }}</h1>
+      <div class="progress-track"><div class="progress-fill" [style.width.%]="pct()"></div></div>
+      <div class="topic-head-stats">
+        <span>{{ progress.topicDoneCount(t) }}/{{ t.items.length }} subtopics &middot; {{ pct() }}%</span>
+        <div class="topic-actions">
+          <button class="btn btn-secondary" (click)="resetProgress()">Reset</button>
+          <button class="btn btn-primary" (click)="markComplete()">Mark Complete</button>
+        </div>
+      </div>
+
+      <div class="prereqs" *ngIf="prerequisiteTopics().length">
+        <span class="meta-label">Prerequisites:</span>
+        <a *ngFor="let p of prerequisiteTopics()" class="prereq-chip" [routerLink]="['/topics', p.categoryId, p.topicId]">
+          {{ p.topicName }}
+        </a>
+      </div>
+    </div>
+
+    <section class="card">
+      <h2>Checklist</h2>
+      <ul class="item-list">
+        <li class="item" *ngFor="let item of t.items">
+          <label class="item-label">
+            <input type="checkbox" [checked]="isChecked(item.id)" (change)="toggle(item.id)" />
+            <span class="item-text" [class.item-done]="isChecked(item.id)">
+              {{ item.title }}
+              <span class="item-meta">Day {{ item.day }} &middot; {{ item.minutes }}m</span>
+            </span>
+          </label>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card" *ngIf="practiceItems().length">
+      <h2>Practice / Hands-on</h2>
+      <ul class="plain-list">
+        <li *ngFor="let item of practiceItems()">{{ item.title }}</li>
+      </ul>
+    </section>
+
+    <section class="card" *ngIf="t.questions.length">
+      <h2>Interview Questions</h2>
+      <ul class="plain-list">
+        <li *ngFor="let q of t.questions">{{ q }}</li>
+      </ul>
+    </section>
+
+    <section class="card" *ngIf="t.resources.length">
+      <h2>Resources</h2>
+      <ul class="plain-list">
+        <li *ngFor="let r of t.resources"><a [href]="r" target="_blank" rel="noopener">{{ r }}</a></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Notes</h2>
+      <textarea
+        class="notes-box"
+        rows="5"
+        placeholder="Your notes on this topic..."
+        [ngModel]="noteValue()"
+        (ngModelChange)="onNoteChange($event)"
+      ></textarea>
+    </section>
+  </div>
+</ng-container>
+
+<ng-template #notFound>
+  <div class="card" style="padding: 20px;">
+    <p>Topic not found.</p>
+    <a routerLink="/topics" class="btn btn-secondary">Back to Topic Library</a>
+  </div>
+</ng-template>

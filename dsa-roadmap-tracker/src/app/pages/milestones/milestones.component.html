@@ -1,0 +1,17 @@
+<div class="milestones-page">
+  <div class="page-head">
+    <h1>Milestones</h1>
+    <p class="sub">{{ achievedCount() }} / {{ milestones().length }} achieved</p>
+  </div>
+
+  <div class="timeline">
+    <div class="milestone card" *ngFor="let m of milestones()" [class.achieved]="m.achieved">
+      <div class="milestone-marker">{{ m.achieved ? '✓' : '' }}</div>
+      <div class="milestone-body">
+        <strong>{{ m.label }}</strong>
+        <div class="progress-track"><div class="progress-fill" [style.width.%]="m.pct"></div></div>
+        <span class="milestone-pct">{{ m.pct }}%</span>
+      </div>
+    </div>
+  </div>
+</div>

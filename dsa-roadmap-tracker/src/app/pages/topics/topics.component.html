@@ -1,0 +1,37 @@
+<div class="topics-page">
+  <div class="page-head">
+    <h1>Topic Library</h1>
+    <p class="sub">Everything covered in the {{ data.totalDays }} days, organized by subject — independent of the weekly schedule.</p>
+  </div>
+
+  <section class="category card" *ngFor="let cat of categories">
+    <button class="category-header" (click)="toggleCategory(cat.categoryId)">
+      <span class="subject-badge" [ngClass]="subjectClass(cat.categoryId)">{{ cat.categoryName }}</span>
+      <span class="category-progress">{{ progress.categoryDoneCount(cat.topics) }}/{{ progress.categoryTotalCount(cat.topics) }} &middot; {{ progress.categoryPct(cat.topics) }}%</span>
+      <span class="chevron" [class.open]="isExpanded(cat.categoryId)">&#9662;</span>
+    </button>
+
+    <div class="progress-track cat-track"><div class="progress-fill" [style.width.%]="progress.categoryPct(cat.topics)"></div></div>
+
+    <div class="topic-list" *ngIf="isExpanded(cat.categoryId)">
+      <a
+        class="topic-row"
+        *ngFor="let topic of cat.topics"
+        [routerLink]="['/topics', topic.categoryId, topic.topicId]"
+      >
+        <span
+          class="topic-check"
+          [class.check-done]="progress.topicStatus(topic) === 'completed'"
+          [class.check-partial]="progress.topicStatus(topic) === 'in-progress'"
+          >{{ progress.topicStatus(topic) === 'completed' ? '☑' : progress.topicStatus(topic) === 'in-progress' ? '◑' : '☐' }}</span
+        >
+        <span class="topic-name">{{ topic.topicName }}</span>
+        <span class="status-pill" [ngClass]="'status-' + progress.topicStatus(topic)">
+          {{ progress.topicStatus(topic) === 'completed' ? 'Completed' : progress.topicStatus(topic) === 'in-progress' ? 'In Progress' : 'Not Started' }}
+        </span>
+        <span class="topic-count">{{ progress.topicDoneCount(topic) }}/{{ topic.items.length }}</span>
+        <div class="progress-track topic-track"><div class="progress-fill" [style.width.%]="progress.topicPct(topic)"></div></div>
+      </a>
+    </div>
+  </section>
+</div>
