@@ -15,10 +15,12 @@ import { CategoryGroup } from '../../core/models';
 export class TopicsComponent {
   readonly categories: CategoryGroup[];
   expanded: WritableSignal<Set<string>>;
+  expandedTopics: WritableSignal<Set<string>>;
 
   constructor(readonly data: DataService, readonly progress: ProgressService) {
     this.categories = data.categories;
     this.expanded = signal<Set<string>>(new Set(this.categories.map((c) => c.categoryId)));
+    this.expandedTopics = signal<Set<string>>(new Set());
   }
 
   isExpanded(categoryId: string): boolean {
@@ -30,6 +32,19 @@ export class TopicsComponent {
     if (s.has(categoryId)) s.delete(categoryId);
     else s.add(categoryId);
     this.expanded.set(s);
+  }
+
+  isTopicExpanded(topicKey: string): boolean {
+    return this.expandedTopics().has(topicKey);
+  }
+
+  toggleTopic(topicKey: string, event: Event): void {
+    event.preventDefault();
+    event.stopPropagation();
+    const s = new Set(this.expandedTopics());
+    if (s.has(topicKey)) s.delete(topicKey);
+    else s.add(topicKey);
+    this.expandedTopics.set(s);
   }
 
   subjectClass(categoryId: string): string {

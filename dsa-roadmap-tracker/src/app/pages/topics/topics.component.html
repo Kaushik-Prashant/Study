@@ -14,24 +14,38 @@
     <div class="progress-track cat-track"><div class="progress-fill" [style.width.%]="progress.categoryPct(cat.topics)"></div></div>
 
     <div class="topic-list" *ngIf="isExpanded(cat.categoryId)">
-      <a
-        class="topic-row"
-        *ngFor="let topic of cat.topics"
-        [routerLink]="['/topics', topic.categoryId, topic.topicId]"
-      >
-        <span
-          class="topic-check"
-          [class.check-done]="progress.topicStatus(topic) === 'completed'"
-          [class.check-partial]="progress.topicStatus(topic) === 'in-progress'"
-          >{{ progress.topicStatus(topic) === 'completed' ? '☑' : progress.topicStatus(topic) === 'in-progress' ? '◑' : '☐' }}</span
-        >
-        <span class="topic-name">{{ topic.topicName }}</span>
-        <span class="status-pill" [ngClass]="'status-' + progress.topicStatus(topic)">
-          {{ progress.topicStatus(topic) === 'completed' ? 'Completed' : progress.topicStatus(topic) === 'in-progress' ? 'In Progress' : 'Not Started' }}
-        </span>
-        <span class="topic-count">{{ progress.topicDoneCount(topic) }}/{{ topic.items.length }}</span>
-        <div class="progress-track topic-track"><div class="progress-fill" [style.width.%]="progress.topicPct(topic)"></div></div>
-      </a>
+      <div class="topic-block" *ngFor="let topic of cat.topics">
+        <div class="topic-row">
+          <button
+            class="topic-arrow"
+            type="button"
+            (click)="toggleTopic(topic.key, $event)"
+            [attr.aria-expanded]="isTopicExpanded(topic.key)"
+            [attr.aria-label]="(isTopicExpanded(topic.key) ? 'Collapse ' : 'Expand ') + topic.topicName"
+          >{{ isTopicExpanded(topic.key) ? '▼' : '▸' }}</button>
+          <span
+            class="topic-check"
+            [class.check-done]="progress.topicStatus(topic) === 'completed'"
+            [class.check-partial]="progress.topicStatus(topic) === 'in-progress'"
+            >{{ progress.topicStatus(topic) === 'completed' ? '☑' : progress.topicStatus(topic) === 'in-progress' ? '◑' : '☐' }}</span
+          >
+          <a class="topic-name" [routerLink]="['/topics', topic.categoryId, topic.topicId]">{{ topic.topicName }}</a>
+          <span class="status-pill" [ngClass]="'status-' + progress.topicStatus(topic)">
+            {{ progress.topicStatus(topic) === 'completed' ? 'Completed' : progress.topicStatus(topic) === 'in-progress' ? 'In Progress' : 'Not Started' }}
+          </span>
+          <span class="topic-count">{{ progress.topicDoneCount(topic) }}/{{ topic.items.length }}</span>
+          <div class="progress-track topic-track"><div class="progress-fill" [style.width.%]="progress.topicPct(topic)"></div></div>
+        </div>
+
+        <ul class="subtopic-list" *ngIf="isTopicExpanded(topic.key)">
+          <li *ngFor="let item of topic.items">
+            <label class="subtopic-label">
+              <input type="checkbox" [checked]="progress.isChecked(item.id)" (change)="progress.toggle(item.id)" />
+              <span class="subtopic-text" [class.subtopic-done]="progress.isChecked(item.id)">{{ item.title }}</span>
+            </label>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 </div>
